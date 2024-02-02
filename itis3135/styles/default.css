@@ -1,0 +1,29 @@
+body{
+    background-color:darkslateblue;
+    text-align: center;
+    color:honeydew;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+a{
+    color:deepskyblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:blueviolet;
+}
+
+img{
+    width: 40%;
+    height: 350px;
+}
+
+figcaption{
+    font-style:italic;
+    color:gainsboro
+}
+
+li{
+    margin-bottom: 16px;
+}
