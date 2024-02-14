@@ -27,3 +27,7 @@ figcaption{
 li{
     margin-bottom: 16px;
 }
+
+#nested-list{
+    list-style-position: inherit;
+}
