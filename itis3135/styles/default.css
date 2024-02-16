@@ -31,3 +31,15 @@ li{
 #nested-list{
     list-style-position: inherit;
 }
+
+table, th, td {
+    border: 1px solid black;
+    font-size: medium;
+    border-collapse: collapse;
+    background-color:cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+  }
+
+  
