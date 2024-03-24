@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Webpage</title>
+    <title>Nolan Cain Hobby Webpage</title>
     <style>
         body{
             height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background:linear-gradient(90deg,rgb(255, 165, 0),rgb(182, 74, 153));
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:lavender;
-    font-weight:bold;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background:linear-gradient(90deg,rgb(255, 165, 0),rgb(182, 74, 153));
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:lavender;
+            font-weight:bold;
         }
         .topic{
             text-align:center;
+            text-decoration: double;
+            color:cornsilk
         }
         a{
             color:aquamarine
@@ -32,57 +34,109 @@
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        .what-section{
+        nav{
+            text-align: center;
+        }
+        .content-section {
+            display: none;
+            padding: 20px;
             text-align: center;
             margin-top: 50px;
             margin-bottom: 50px;
+            color:darkblue;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: oblique;
         }
-        .when-section{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+        .content-section h2 {
+            margin-top: 0;
         }
-        .where-section{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+        .nav-link:hover {
+            text-decoration: underline;
         }
-        .how-section{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+        .nav-link {
+            color:cornsilk;
+            text-decoration: none;
+            margin-right: 20px;
         }
-        .why-section{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-        .ai-section{
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
+        .nav-links {
+            display: flex;
+        }   
     </style>
+    
+    <nav>
+        <div class="nav-links">
+            <a href="#" class="nav-link" data-section="section1">What Are We?</a>
+            💎
+            <a href="#" class="nav-link" data-section="section2">About Us!</a>
+            💎
+            <a href="#" class="nav-link" data-section="section3">Our Agenda!</a>
+            💎
+            <a href="#" class="nav-link" data-section="section4">Where Are We Located?</a>
+            💎
+            <a href="#" class="nav-link" data-section="section5">Our Process?</a>
+            💎
+            <a href="#" class="nav-link" data-section="section6">Our Mission!</a>
+            💎
+            <a href="#" class="nav-link" data-section="section7">AI Prompts:</a>
+        </div>
+    </nav>
 </head>
 <body>
     <header>
-        <h1 class="topic">Gaming</h1>
+        <h1 class="topic">Rock Collecting</h1>
     </header>
 
     <main>
-        <section class="what-section"><h2>What Are We?</h2></p></section>
+        <section id="section1" class="content-section" style="display: block;">
+            <h2>What Are We?</h2>
+        </section>
 
-        <section class="who-section"><h2>About Us!</h2></p></section>
+        <section id="section2" class="content-section">
+            <h2>About Us!</h2>
+        </section>
 
-        <section class="when-section"><h2>Our Agenda!</h2></p></section>
+        <section id="section3" class="content-section">
+            <h2>Our Agenda!</h2>
+        </section>
 
-        <section class="where-section"><h2>Where Are We Located?</h2></p></section>
+        <section id="section4" class="content-section">
+            <h2>Where Are We Located?</h2>
+        </section>
 
-        <section class="how-section"><h2>Our Process?</h2></p></section>
+        <section id="section5" class="content-section">
+            <h2>Our Process?</h2>
+        </section>
 
-        <section class="why-section"><h2>Our Mission!</h2></p></section>
+        <section id="section6" class="content-section">
+            <h2>Our Mission!</h2>
+        </section>
 
-        <section class="ai-section"><h2>AI Prompts:</h2></p></section>
+        <section id="section7" class="content-section">
+            <h2>AI Prompts:</h2>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.content-section');
+    
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetSection = this.dataset.section;
+    
+        sections.forEach(section => {
+            if (section.id === targetSection) {
+              section.style.display = 'block';
+            } else {
+              section.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+        </script>
+
     </main>
 
     <footer>
