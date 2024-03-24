@@ -10,7 +10,7 @@
             margin: 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background:linear-gradient(90deg,rgb(255, 165, 0),rgb(182, 74, 153));
+            background:linear-gradient(90deg,rgb(216, 153, 59),rgb(228, 96, 193));
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color:lavender;
             font-weight:bold;
@@ -18,7 +18,7 @@
         .topic{
             text-align:center;
             text-decoration: double;
-            color:cornsilk
+            color:rgba(86, 237, 229, 0.755)
         }
         a{
             color:aquamarine
@@ -54,7 +54,7 @@
             text-decoration: underline;
         }
         .nav-link {
-            color:cornsilk;
+            color:rgba(86, 237, 229, 0.755);
             text-decoration: none;
             margin-right: 20px;
         }
@@ -68,12 +68,17 @@
             display: flexbox;
         }
         .img1{
-            max-width: 50%;
-            max-height: 50%;
+            max-width: 45%;
+            max-height: 20%;
             display: block;
             margin: auto;
-
-            ;
+        }
+        figcaption{
+            margin-top: 25px;
+            font-style:italic;
+        }
+        .figcap-p{
+            color:darkblue;
         }   
     </style>
     
@@ -117,12 +122,38 @@
                         cars into the hobby which allowed many rockhounds to 
                         quickly move from site to site. 
                     </p>
-                    <figure><img src="images/aquamarinefind.jpg" class="img1"></figure>
+                    <figure>
+                        <img src="images/aquamarinefind.jpg" class="img1">
+                        <figcaption>A rockhound chiseling away for Aquamarine</figcaption>
+                    </figure>
+                    <p class="figcap-p"><em>"A prospector uncovering a beautiful aquamarine from the dirt"</em></p>
                 </h3>
         </section>
 
         <section id="section2" class="content-section">
             <h2>About Us!</h2>
+                <h3>
+                    <p>
+                        Our team is founded on a decade of in the field
+                        experience prospecting in the mountains of North Carolina
+                        and visiting various rockshows in multiple states even as 
+                        far as Arizona! We hold and unwavering love for the natural
+                        beauty produced within the Earth's crust which takes millions
+                        of years to manifest.
+                    </p>
+                    <p>
+                        Over our time in the hobby we have managed to obtain many 
+                        rare minerals and beautiful specimens from across the country.
+                        Our personal favorite that we have got our hands on is the mineral
+                        fulgurite which is natural tubes or crusts of glass formed by the 
+                        fusion of silica (quartz) sand or rock from a lightning strike.
+                    </p>
+                    <figure>
+                        <img src="images/fulguriteimg.jpg" class="img1">
+                        <figcaption>A fulgurite specimen mimicing the path of lightning through silica.</figcaption>
+                        <p class="figcap-p"><em>"A pristine Fulgurite specimen"</em></p>
+                    </figure>
+                </h3>
         </section>
 
         <section id="section3" class="content-section">
@@ -148,6 +179,9 @@
                 </p>
                 <p>
                     "Can you make the code where it shows section 1 by default"
+                </p>
+                <p>
+                    "How to fit an image properly in HTML"
                 </p>
         </section>
 
