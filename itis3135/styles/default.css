@@ -15,8 +15,8 @@ a:hover{
 }
 
 img{
-    width: 40%;
-    height: 350px;
+    width:fit-content;
+    height:300px;
 }
 
 figcaption{
