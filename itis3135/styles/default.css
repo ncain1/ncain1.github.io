@@ -98,3 +98,6 @@ button[type="reset"]:hover {
 input{
     width: 25px;
 }
+.bottom-div{
+    margin-bottom: 40px;
+}
