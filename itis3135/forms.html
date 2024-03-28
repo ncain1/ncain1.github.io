@@ -24,6 +24,51 @@
             <a href="forms.html">Forms</a>
         </nav>
     </header>
+
+        <main>
+            <div>
+            <h1>Cain Corp Sign-up</h1>
+  
+            <form action="#" method="post" id="myForm">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required size="30"><br>
+              
+              <label for="phone">Phone Number:</label><br>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="15"><br>
+              
+              <label for="email">Email Address:</label><br>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required size="30"><br>
+              
+              <label>What brought you here?</label><br>
+              <input type="checkbox" id="interest1" name="interest1" value="option1">
+              <label for="interest1">To Buy</label><br>
+              <input type="checkbox" id="interest2" name="interest2" value="option2">
+              <label for="interest2">To Sell</label><br>
+              <input type="checkbox" id="interest3" name="interest3" value="option3">
+              <label for="interest3">To Browse</label><br>
+              
+              <label>Preferred communication method:</label><br>
+              <input type="radio" id="communication1" name="communication" value="email">
+              <label for="communication1">Email</label><br>
+              <input type="radio" id="communication2" name="communication" value="phone">
+              <label for="communication2">Phone</label><br>
+              <input type="radio" id="communication3" name="communication" value="mail">
+              <label for="communication3">Mail</label><br>
+              
+              <label for="country">Select your country:</label><br>
+              <select id="country" name="country" required>
+                <option value="">Select</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+              </select><br>
+              
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </form>
+                </div>
+        </main>
+
 </body>
 <footer>
     <nav>
