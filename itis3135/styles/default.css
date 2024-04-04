@@ -6,12 +6,12 @@ body{
 }
 
 a{
-    color:deepskyblue;
+    color:rgb(25, 236, 229);
     text-decoration: none;
 }
 
 a:hover{
-    color:blueviolet;
+    color:rgb(150, 84, 212);
 }
 
 img{
@@ -112,4 +112,8 @@ input{
     border-image: auto;
     border-radius: 20px;
     margin-bottom: 20px;
+}
+.webdesc{
+    font-size: 18px;
+    color:bisque
 }
