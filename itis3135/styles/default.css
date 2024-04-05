@@ -109,7 +109,6 @@ input{
 }
 #about_photo{
     padding:initial;
-    border-image: auto;
     border-radius: 20px;
     margin-bottom: 20px;
 }
