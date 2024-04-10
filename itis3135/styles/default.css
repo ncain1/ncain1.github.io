@@ -131,3 +131,10 @@ input{
     margin-left: 100px;
     margin-right: 100px;
 }
+div.container{
+    text-align: center;
+}
+ul.myUL{
+    display: inline-block;
+  text-align: left;
+}
