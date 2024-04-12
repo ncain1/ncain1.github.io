@@ -39,11 +39,12 @@ h2{
 p.text-box{
     text-align: center;
     font-size: 18px;
+    font-weight:bolder;
     display: block;
     margin-right: 200px;
     margin-left: 200px;
     padding-top: 20px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
 }
 h2.motto{
     font-size: 20px;
