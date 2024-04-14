@@ -77,3 +77,11 @@ h2.motto{
 .agenda-center{
     text-align: center;
 }
+h3{
+    text-align: center;
+}
+.warning{
+    color:black;
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
