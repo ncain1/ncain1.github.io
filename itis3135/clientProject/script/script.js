@@ -1,26 +1,29 @@
-var images = document.getElementById("image-container").children;
-var index = 0;
+const slideshowIndices = {
+    1: 0,  
+    2: 0   
+};
 
-function fadeImages() {
-  var nextIndex = (index + 1) % images.length;
-  var currentImage = images[index];
-  var nextImage = images[nextIndex];
 
-  currentImage.style.opacity = 1;
+function changeSlide(slideshowNum, direction) {
+    const slides = document.querySelectorAll(`#slideshow${slideshowNum} .slide`);
+    const currentIndex = slideshowIndices[slideshowNum];
 
-  var opacity = 0;
-  var interval = setInterval(function() {
-    opacity += 0.05;
-    nextImage.style.opacity = opacity;
-    currentImage.style.opacity = 1 - opacity;
-    if (opacity >= 1) {
-      clearInterval(interval);
-      currentImage.style.display = "none";
-      nextImage.style.display = "block";
-      index = nextIndex;
-      setTimeout(fadeImages, 5000);
+
+    slides[currentIndex].style.display = 'none';
+
+
+    let newIndex = currentIndex + direction;
+
+
+    if (newIndex >= slides.length) {
+        newIndex = 0;
+    } else if (newIndex < 0) {
+        newIndex = slides.length - 1;
     }
-  }, 50);
-}
 
-fadeImages();
+
+    slideshowIndices[slideshowNum] = newIndex;
+
+
+    slides[newIndex].style.display = 'block';
+}

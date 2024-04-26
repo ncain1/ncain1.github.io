@@ -30,42 +30,61 @@
             <h2>Our Recent Projects!</h2>
         </div>
             <div class="img-center">
-                <div id="image-container">
+                <div class="slideshow-container" id="slideshow1">
+                    <div class="slide">
                 <figure>
                     <img src="images/firedepartmenthydrantbefore.jpg" alt="Before image of dirty fire hydrant">
                     <figcaption>Hydrant Before Sanding and Painting</figcaption>
                 </figure>
+            </div>
+            <div class="slide">
                 <figure>
                     <img src="images/firedepartmenthydrantafter.jpg" alt="After image of dirty fire hydrant">
                     <figcaption>Hydrant After Sanding and Painting</figcaption>
                 </figure>
+            </div>
+            <div class="slide">
                 <figure> 
                     <img src="images/hosetesting.jpg" alt="Testing out the Fire Hose">
                         <figcaption>Checking Hose Pressure</figcaption>
                 </figure>
-
+                    </div>
+            <div class="slide">
                 <figure>
                     <img src="images/hyrdanttesting.jpg" alt="Testing out the Fire Hydrant">
                     <figcaption>Checking Hydrant Pressure</figcaption>
                 </figure>
-                </div>
             </div>
+            <a class="prev" onclick="changeSlide(1 ,-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1 ,1)">&#10095;</a>
+            </div>
+        </div>
                 <div class="header-div">
             <h2>Our Recent Events!</h2>
             </div>
             <div class="img-center">
+                <div class="slideshow-container" id="slideshow2">
+                    <div class="slide">
                     <figure>
                     <img src="images/prayercircle.jpg" alt="Prayer Circle Event at Fire Department" class="img-sizer">
                     <figcaption>Prayer Circle Night</figcaption>
                 </figure>
+            </div>
+            <div class="slide">
                 <figure>
                     <img src="images/bbqplatesale.jpg" alt="BBQ Plate Sale Event at Fire Department">
                     <figcaption>Hydrant After Sanding and Painting</figcaption>
                     </figure>
+                </div>
+                <div class="slide">
                     <figure> 
                     <img src="images/firetrucktraining.jpg" alt="Crew Conducting Training on Fire Truck" class="img-sizer">
                         <figcaption>Training on Firetruck Operation</figcaption>
                 </figure>
+            </div>
+            <a class="prev" onclick="changeSlide(2,-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(2,1)">&#10095;</a>
+                </div>
             </div>
             
     </main>
@@ -82,6 +101,6 @@
             </a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
