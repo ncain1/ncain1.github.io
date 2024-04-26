@@ -85,3 +85,13 @@ h3{
     font-size: 22px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#image-container img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #image-container imgfirst-child {
+    opacity: 1;
+  }
