@@ -123,3 +123,41 @@ h3{
 .next {
     right: 0;
 }
+
+#countdown-timer-container{
+    text-align: center;
+    font-size: x-large;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+    border-width: 8px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: radial-gradient(rgb(130, 120, 120), rgb(233,233,233));
+}
+
+.quiz {
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    background: #f9f9f9;
+}
+
+.results {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
