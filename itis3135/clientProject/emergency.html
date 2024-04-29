@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/default.css">
-    <script src="script/quiz.js"></script>
     <title>Allenton Volunteer Fire Department Emergency Protocols</title>
 </head>
 <body>
@@ -96,43 +95,52 @@
                 </p>
             <h3>Think you have been paying attention? Try the emergency quiz below!</h3>
             
-            <div class="quiz">
-                <h2>Quick Quiz</h2>
+            <div id="quiz-container">
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <h3>1. Where is the best place to be in your house during tornados?</h3>
+                        <label>
+                            <input type="radio" name="q1" value="a"> The Second Floor
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b"> Near Windows
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c"> The center of the house away from windows
+                        </label>
+                    </div>
         
-                <!-- Question 1 -->
-                <div>
-                    <p>What is the capital of France?</p>
-                    <input type="radio" name="q1" value="Paris"> Paris<br>
-                    <input type="radio" name="q1" value="London"> London<br>
-                    <input type="radio" name="q1" value="Berlin"> Berlin<br>
-                </div>
+                    <div class="quiz-question">
+                        <h3>2. Which one means a tornado has been spotted?</h3>
+                        <label>
+                            <input type="radio" name="q2" value="a"> Warning
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b"> Watch
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="c"> Outlook
+                        </label>
+                    </div>
         
-                <!-- Question 2 -->
-                <div>
-                    <p>What is 2 + 2?</p>
-                    <input type="radio" name="q2" value="3"> 3<br>
-                    <input type="radio" name="q2" value="4"> 4<br>
-                    <input type="radio" name="q2" value="5"> 5<br>
-                </div>
+                    <div class="quiz-question">
+                        <h3>3. Which of the following is prominent during summer?</h3>
+                        <label>
+                            <input type="radio" name="q3" value="a"> Frostbite
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="b"> Heatstroke
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="c"> Flu
+                        </label>
+                    </div>
         
-                <!-- Question 3 -->
-                <div>
-                    <p>Which of these is a fruit?</p>
-                    <input type="radio" name="q3" value="Carrot"> Carrot<br>
-                    <input type="radio" name="q3" value="Apple"> Apple<br>
-                    <input type="radio" name="q3" value="Broccoli"> Broccoli<br>
-                </div>
-        
-                <!-- Button to submit the quiz -->
-                <button id="submitQuiz">Submit Answers</button>
+                    <button type="button" id="submit-quiz">Submit Quiz</button>
+                </form>
+                <div id="quiz-results"></div>
             </div>
-        
-            <!-- Results section -->
-            <div id="results" class="results" style=hidden>
-                <h3>Quiz Results</h3>
-                <p id="resultsText"></p>
-            </div>
-
+            <script src="script/quiz.js"></script>
         </main>
     <footer>
         <div class="footer-div">
