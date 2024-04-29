@@ -6,8 +6,8 @@
     <title>CAIN CORP DESIGN PAGE</title>
     <style>
         body{
-            background-color:darkcyan;
-            color:palegreen;
+            background-color:rgb(10, 45, 126);
+            color:rgb(241, 126, 167);
             text-align: center;
             font-size: larger;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,13 +18,51 @@
         .motto{
             font-size: small;
         }
+        a{
+            color:rgb(192, 192, 247);
+        }
+        a:hover{
+            color:rgb(158, 32, 197)
+        }
+        #image-resizer{
+            height:50px;
+            width:50px;
+        }
+        #text-block{
+            margin-right:100px;
+            margin-left: 100px;
+        }
+        ul{
+            list-style-position: inside;
+            list-style:square
+        }
     </style>
 </head>
 <body>
-    <p>This is the design page of Cain Corp!</p>
+    <header>
+        <h1><img src="cc_images/caincorpLogo.jpg" id="image-resizer">   Cain Corp</h1>
+    </header>
+    <main>
+        <h2>Cain Corp Services</h2>
+    <p id="text-block">Welcome to the design page of Cain Corp! Established in 2024 we were founded on the belief that all people should have access to affordable Gems and Minerals and have made it a goal to spread the love of the hobby. Far too many potential rockhounds  are scared off by the price ranges but fret no long because Cain Corp is here!</p>
+        <ul>
+            <li>We have hundreds of locations across the US</li>
+            <li>We are certified by the Better Business Bureau</li>
+            <li>We supply of 4,000 different types of rocks and minerals</li>
+            <li>We have over 2,000 employees</li>
+            <li>We have established partnerships with major retail chains</li>
+        </ul>
+    <p id="text-block">What we would like to do for a client is to provide great deals to allow you get your foot into the world of rock collecting and develop a love for it without emptying your wallets in the process. Contact as at caincorp@gmail.com, 910-823-8274, or visit us at 374 East Elm Street, Logden, Indiana 28495</p>
+</main>
 </body>
 <footer>
     <p>Page built by <a href="caincorp.co/">Cain Corp</a>,<a href="https://www.freecodecamp.org/certification/fcc369454b4-aa0b-4412-b669-703b9620f0cd/responsive-web-design"> Certified in RWD</a>, <a href="https://www.freecodecamp.org/certification/fcc369454b4-aa0b-4412-b669-703b9620f0cd/javascript-algorithms-and-data-structures-v8">Certified in JS</a> &copy; 2024</p>
-    <p class="motto">"There's no gain without <b>Cain</b>"</p>
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+       </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    <p class="motto">"There's no gain without <strong>Cain</strong>"</p>
 </footer>
 </html>
